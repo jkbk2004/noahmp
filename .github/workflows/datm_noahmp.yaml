@@ -2,10 +2,10 @@ name: test_datm_lnd
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ feature/build ]
   pull_request:
     types: [opened, synchronize, reopened, labeled, unlabeled]
-    branches: [ develop ]
+    branches: [ feature/build ]
   schedule:
     - cron: '0 0 * * MON'
     - cron: '0 0 * * FRI'
